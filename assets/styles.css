@@ -130,3 +130,9 @@
 .container .card:hover {
     transform: scale(1.05);
 }
+
+.container header h1{
+    color: #FFC70F;
+    font-weight: 600;
+    text-decoration: underline;
+}
