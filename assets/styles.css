@@ -1,0 +1,132 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Home Section */
+
+.home {
+    height: 100vh;
+    background-color: #0A192F;
+}
+
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left h5 {
+    color: #FFC70F;
+}
+
+.left h1 {
+    font-size: 4rem;
+    color: #CCD6F6;
+    font-weight: 600;
+    line-height: 1;
+    margin: 0;
+}
+
+.left h2 {
+    font-size: 4rem;
+    color: #8892BE;
+}
+
+.left p {
+    padding: 15px 0 0 0;
+    color: #8892B0;
+    font-weight: lighter;
+}
+
+.learn-more {
+    padding: 0.8em 1.8em;
+    border: 2px solid #17C3B2;
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: .3s;
+    z-index: 1;
+    font-family: inherit;
+    color: #17C3B2;
+}
+
+.learn-more::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #17C3B2;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+}
+
+.learn-more:hover::before {
+    width: 105%;
+}
+
+.learn-more:hover {
+    color: #111;
+}
+
+.cssbuttons-io-button {
+    display: flex;
+    align-items: center;
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 17px;
+    padding: 0.8em 1.5em 0.8em 1.2em;
+    color: white;
+    background: #ad5389;
+    background: linear-gradient(0deg, rgba(77, 54, 208, 1) 0%, rgba(132, 116, 254, 1) 100%);
+    border: none;
+    box-shadow: 0 0.7em 1.5em -0.5em #4d36d0be;
+    letter-spacing: 0.05em;
+    border-radius: 20em;
+}
+
+.cssbuttons-io-button span a{
+    text-decoration: none;
+    color:#bebebe;
+}
+
+.cssbuttons-io-button svg {
+    margin-right: 8px;
+}
+
+.cssbuttons-io-button:hover {
+    box-shadow: 0 0.5em 1.5em -0.5em #4d36d0be;
+}
+
+.cssbuttons-io-button:active {
+    box-shadow: 0 0.3em 1em -0.5em #4d36d0be;
+}
+
+/* about section */
+
+.about {
+    height: 100vh;
+    background-color: #0A192F;
+}
+
+.container .card {
+    width: 300px;
+    height: 400px;
+    border-radius: 50px;
+    background: #0A192F;
+    box-shadow: 5px 5px 5px #bebebe,
+        -10px 10px 10px #ffffff;
+    transition: .3s;
+}
+
+.container .card:hover {
+    transform: scale(1.05);
+}
