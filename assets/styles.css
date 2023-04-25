@@ -139,7 +139,7 @@
     color: #FFC70F;
     font-weight: 600;
     text-decoration: underline;
-    padding: 10px 0;
+    padding: 1.5em 0 0 0;
     text-align: center;
 }
 
@@ -149,19 +149,20 @@
     text-align: center;
 }
 
-.card {
+.articles-card {
     max-width: 350px;
     box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
     transition: .3s all ease;
+    margin: 20px 0;
 }
 
-.card:hover{
+.articles-card:hover{
     box-shadow: 0 0 0 2px #980d0d, 0 10px 60px 0 rgba(#000, .1);
     transform: translatey(-5px);
     border: 2px solid purple;
 }
 
-.card:focus-within{
+.articles-card:focus-within{
     box-shadow: 0 0 0 2px #980d0d, 0 10px 60px 0 rgba(#000, .1); 
 }
 
@@ -202,3 +203,6 @@
                 inset -4px -4px 12px #ffffff;
    }
 
+.card{
+    padding: 10px;
+}
