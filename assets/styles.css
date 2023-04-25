@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -53,6 +55,11 @@
     z-index: 1;
     font-family: inherit;
     color: #17C3B2;
+}
+
+.learn-more a{
+    text-decoration: none;
+    color: #fff;
 }
 
 .learn-more::before {
@@ -141,3 +148,57 @@
     font-weight: bold;
     text-align: center;
 }
+
+.card {
+    max-width: 350px;
+    box-shadow: 0 0 0 1px rgba(#000, .05), 0 20px 50px 0 rgba(#000, .1);
+    transition: .3s all ease;
+}
+
+.card:hover{
+    box-shadow: 0 0 0 2px #980d0d, 0 10px 60px 0 rgba(#000, .1);
+    transform: translatey(-5px);
+    border: 2px solid purple;
+}
+
+.card:focus-within{
+    box-shadow: 0 0 0 2px #980d0d, 0 10px 60px 0 rgba(#000, .1); 
+}
+
+.card-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    margin: 0.5em 0;
+    max-height: 200px;
+    object-fit: cover;
+    max-width: 280px;
+}
+
+.love-icon i{
+    cursor: pointer;
+    box-shadow: 0 0 0 1px rgba(#000, .05), 0 3px 8px 0 rgba(#000, .15);
+    font-size: 25px;
+}
+
+.medium-link{
+    color: #090909;
+    padding: 0.3em 1em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px #c5c5c5,
+                -6px -6px 12px #ffffff;
+   }
+   
+   medium-link:active {
+    color: #666;
+    box-shadow: inset 4px 4px 12px #c5c5c5,
+                inset -4px -4px 12px #ffffff;
+   }
+
